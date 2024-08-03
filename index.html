@@ -30,6 +30,7 @@
             background-color: #6a1b9a;
             font-family: "Quicksand", sans-serif;
             font-optical-sizing: auto;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -37,6 +38,8 @@
             padding: 15px 20px;
             text-decoration: none;
             text-transform: uppercase;
+            flex: 1;
+            text-align: center;
         }
 
         nav a:hover {
@@ -105,7 +108,25 @@
 
         @media (max-width: 600px) {
             nav a {
-                padding: 10px 15px;
+                padding: 10px 5px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 30px 10px;
+            }
+
+            .icon {
+                font-size: 1.5em;
+            }
+
+            ul {
+                width: 100%;
+            }
+
+            ul li {
+                flex-direction: column;
+                text-align: left;
             }
         }
 
@@ -125,28 +146,31 @@
             align-items: center;
             justify-content: center;
         }
-.titleheader{
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  color:white;
-}
-.data-ject{
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-    margin-bottom: 20px;
-}
+        
+        .titleheader {
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            color: white;
+        }
+        
+        .data-ject {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin-bottom: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -159,7 +183,6 @@
         <a href="#development-phase">Development</a>
         <a href="#venture-capital">Venture Capital</a>
         <a href="#roadmap">Roadmap</a>
-      
     </nav>
 
     <section id="research-phase" class="fade-in">
@@ -173,7 +196,6 @@
             <li><span class="checkmark">&#x2714;</span>Encryption Excellence</li>
             <li><span class="checkmark">&#x2714;</span>Stolen Data Tracking & Deletion</li>
             <li><span class="checkmark">&#x2714;</span>Regulatory Compliance</li>
-          
         </ul>
     </section>
 
@@ -200,7 +222,7 @@
             <li><span class="checkmark">&#x2714;</span>Invest in Security</li>
             <li><span class="checkmark">&#x2714;</span>Growth Opportunities</li>
             <li><span class="checkmark">&#x2714;</span>Strategic Partnerships</li>
-            <li><span class="checkmark">&#x2714;</span>Funding advertising</li>
+            <li><span class="checkmark">&#x2714;</span>Funding Advertising</li>
         </ul>
     </section>
 
@@ -217,9 +239,10 @@
             <li><strong></strong> Full Product Launch</li>
         </ul>
     </section>
+    
     <a href="https://data-ject.com/intelligence" class="data-ject">Back to site</a>
-
-    </footer>
+    
+    <footer></footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -252,3 +275,4 @@
     </script>
 </body>
 </html>
+
